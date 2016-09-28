@@ -222,7 +222,7 @@ shinyServer(function(input, output) {
                        colors = pal_URB, 
                        opacity = 0.6, group = PM25_raster) %>%
         addLegend("bottomright",pal = pal_URB, values = getValues(URB_Cover_tif),
-                  title = "<br><strong>PM<sub>2.5</sub> (<font face=symbol>m</font>g/m<sup>3</sup>) URB Cover (%): </strong>",
+                  title = "<br> URB Cover (%): </strong>",
                   labFormat = labelFormat(prefix = ""),
                   opacity = 0.6) %>%
         addLayersControl(
@@ -240,7 +240,7 @@ shinyServer(function(input, output) {
                        colors = pal_PM25_SAT, 
                        opacity = 0.6, group = PM25_raster) %>%
         addLegend("bottomright",pal = pal_PM25_SAT, values = getValues(PM25_SAT_tif),
-                  title = "<br><strong>PM<sub>2.5</sub> (<font face=symbol>m</font>g/m<sup>3</sup>) MODIS (10km): </strong>",
+                  title = "<br><strong>PM<sub>2.5</sub> (<font face=symbol>m</font>g/m<sup>3</sup>) MODIS (1km): </strong>",
                   labFormat = labelFormat(prefix = ""),
                   opacity = 0.6) %>%
         addLayersControl(

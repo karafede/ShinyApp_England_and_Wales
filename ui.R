@@ -36,7 +36,7 @@ jscode <- "shinyjs.refresh = function() { history.go(0); }"
                conditionalPanel(
                  condition = "input.type == 'raster'",
                  selectInput("variable_raster", "Choose layer", c("% urban coverage (1km)" = "URB_Cover_tif",
-                                                                  "PM2.5 satellite (MODIS 10km 2009-11)" = "PM25_SAT_tif",
+                                                                  "PM2.5 satellite (MODIS 1km 2009-11)" = "PM25_SAT_tif",
                                                                   "PM2.5 UK-AIR (2009-11)" = "PM25_UK_AIR_tif",
                                                                   "PM2.5 Satellite 1km (MODIS-GWR 2014)" = "PM25_GWR_tif",
                                                                   "PM2.5 modeled data (pcm 2014)" = "PM25_pcm_tif",
